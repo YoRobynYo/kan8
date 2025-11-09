@@ -1,7 +1,9 @@
 # backend/chat/chat_api.py || v4.7 – Fixed Course Detection
 from fastapi import APIRouter
 from pydantic import BaseModel
-from backend.services.ai_client import get_ai_client
+# from backend.services.ai_client import get_ai_client
+from kanban.backend.services.ai_client import get_ai_client
+
 import os, json, re
 from PyPDF2 import PdfReader
 

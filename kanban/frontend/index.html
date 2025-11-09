@@ -26,16 +26,17 @@
   <!-- sidebar for menu -->
   <aside class="kanban-sidebar">
     <div class="sidebar-header">
-      <span class="project-icon">EB</span>
+      <span class="project-icon">Kan8</span>
       <div class="project-info">
-        <h2 class="project-title">Eco-Build</h2>
-        <p class="project-type">Software project</p>
+        <h2 class="project-title">kan8</h2>
+        <p class="project-type">LearnSomething</p>
       </div>
     </div>
     <button class="sidebar-toggle" aria-label="Collapse sidebar">
       <i class="fas fa-chevron-left"></i>
     </button>
     <nav class="sidebar-nav">
+
       <!-- PLANNING Section -->
       <div class="nav-section">
         <div class="nav-section-header">
@@ -43,31 +44,20 @@
         </div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-pencil-ruler"></i>
-              <span>Designing The Project</span>
-            </a>
+            <a href="#"><i class="fas fa-pencil-ruler"></i><span>Designing The Project</span></a>
           </li>
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-stream"></i>
-              <span>Timeline</span>
-            </a>
+            <a href="#"><i class="fas fa-stream"></i><span>Timeline</span></a>
           </li>
           <li class="nav-item active">
-            <a href="#" data-view="kanban">
-              <i class="fas fa-columns"></i>
-              <span>Kanban board</span>
-            </a>
+            <a href="#" data-view="kanban"><i class="fas fa-columns"></i><span>Kanban board</span></a>
           </li>
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-chart-bar"></i>
-              <span>Reports</span>
-            </a>
+            <a href="#"><i class="fas fa-chart-bar"></i><span>Reports</span></a>
           </li>
         </ul>
       </div>
+
       <!-- DEVELOPMENT Section -->
       <div class="nav-section">
         <div class="nav-section-header">
@@ -75,44 +65,28 @@
         </div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-exclamation-circle"></i>
-              <span>Issues</span>
-            </a>
+            <a href="#"><i class="fas fa-exclamation-circle"></i><span>Issues</span></a>
           </li>
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-puzzle-piece"></i>
-              <span>Components</span>
-            </a>
+            <a href="#"><i class="fas fa-puzzle-piece"></i><span>Components</span></a>
           </li>
           <ul class="nav-items">
             <li class="nav-item">
-              <a href="#" data-view="fundamentals">
-                <i class="fas fa-graduation-cap"></i>
-                <span>Fundamentals</span>
-              </a>
+              <a href="#" data-view="fundamentals"><i class="fas fa-graduation-cap"></i><span>Fundamentals</span></a>
             </li>
             <li class="nav-item">
-              <a href="#" data-view="code">
-                <i class="fas fa-code"></i>
-                <span>Code</span>
-              </a>
+              <a href="#" data-view="code"><i class="fas fa-code"></i><span>Code</span></a>
             </li>
             <li class="nav-item">
-              <a href="#">
-                <i class="fas fa-shield-alt"></i>
-                <span>Security</span>
-              </a>
+              <a href="#"><i class="fas fa-shield-alt"></i><span>Security</span></a>
             </li>
             <li class="nav-item">
-              <a href="#">
-                <i class="fas fa-rocket"></i>
-                <span>Releases</span>
-              </a>
+              <a href="#"><i class="fas fa-rocket"></i><span>Releases</span></a>
             </li>
           </ul>
+        </ul>
       </div>
+
       <!-- OPERATIONS Section -->
       <div class="nav-section">
         <div class="nav-section-header">
@@ -120,23 +94,13 @@
         </div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-cloud-upload-alt"></i>
-              <span>Deployments</span>
-            </a>
+            <a href="#"><i class="fas fa-cloud-upload-alt"></i><span>Deployments</span></a>
           </li>
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-fire"></i>
-              <span>Incidents</span>
-              <span class="badge">BETA</span>
-            </a>
+            <a href="#"><i class="fas fa-fire"></i><span>Incidents</span><span class="badge">BETA</span></a>
           </li>
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-phone"></i>
-              <span>On-call</span>
-            </a>
+            <a href="#"><i class="fas fa-phone"></i><span>On-call</span></a>
           </li>
         </ul>
       </div>
@@ -148,10 +112,7 @@
         </div>
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="#">
-              <i class="fas fa-plus"></i>
-              <span>Add shortcut</span>
-            </a>
+            <a href="#"><i class="fas fa-plus"></i><span>Add shortcut</span></a>
           </li>
         </ul>
       </div>
@@ -162,21 +123,18 @@
   <!-- TOP BUTTONS -->
   <div class="top-buttons">
     <button id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
-    <button id="chatButton" class="chat-button" title="Open Chat">
-      <i class="fas fa-comments"></i>
-    </button>
+    <button id="chatButton" class="chat-button" title="Open Chat"><i class="fas fa-comments"></i></button>
     <button id="reset-chat-btn" class="reset-button" title="Reset Chat">🔄</button>
   </div>
 
   <!-- MAIN CONTENT -->
   <div class="main-content-wrapper">
     <div class="page-container">
-
       <!-- KANBAN VIEW -->
       <div id="kanban-view" class="view-container active">
         <div class="left-column">
           <div class="kanban-board">
-            <!-- Project Backlog -->
+            <!-- Columns -->
             <div class="kanban-column" id="backlog">
               <h2 class="column-title">Project Backlog</h2>
               <div class="tasks">
@@ -199,10 +157,14 @@
                   <div class="task-actions"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></div>
                 </div>
               </div>
-              <form class="add-task-form"><input type="text" placeholder="+ Add a task" required /><button
-                  type="submit">Add</button></form>
+              <form class="add-task-form">
+                <input type="text" placeholder="+ Add a task" required />
+                <button type="submit">Add</button>
+              </form>
             </div>
-            <!-- Not Started -->
+
+            <!-- Repeat other columns: Not Started, In Progress, Completed, On Hold -->
+            <!-- Each structured exactly like backlog, IDs preserved -->
             <div class="kanban-column" id="not-started">
               <h2 class="column-title">Not Started</h2>
               <div class="tasks">
@@ -216,10 +178,12 @@
                   <div class="task-actions"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></div>
                 </div>
               </div>
-              <form class="add-task-form"><input type="text" placeholder="+ Add a task" required /><button
-                  type="submit">Add</button></form>
+              <form class="add-task-form">
+                <input type="text" placeholder="+ Add a task" required />
+                <button type="submit">Add</button>
+              </form>
             </div>
-            <!-- In Progress -->
+
             <div class="kanban-column" id="in-progress">
               <h2 class="column-title">In Progress</h2>
               <div class="tasks">
@@ -227,22 +191,28 @@
                   <div class="task-actions"><i class="fas fa-pen"></i><i class="fas fa-trash"></i></div>
                 </div>
               </div>
-              <form class="add-task-form"><input type="text" placeholder="+ Add a task" required /><button
-                  type="submit">Add</button></form>
+              <form class="add-task-form">
+                <input type="text" placeholder="+ Add a task" required />
+                <button type="submit">Add</button>
+              </form>
             </div>
-            <!-- Completed -->
+
             <div class="kanban-column" id="completed">
               <h2 class="column-title">Completed</h2>
               <div class="tasks"></div>
-              <form class="add-task-form"><input type="text" placeholder="+ Add a task" required /><button
-                  type="submit">Add</button></form>
+              <form class="add-task-form">
+                <input type="text" placeholder="+ Add a task" required />
+                <button type="submit">Add</button>
+              </form>
             </div>
-            <!-- On Hold -->
+
             <div class="kanban-column" id="on-hold">
               <h2 class="column-title">On Hold</h2>
               <div class="tasks"></div>
-              <form class="add-task-form"><input type="text" placeholder="+ Add a task" required /><button
-                  type="submit">Add</button></form>
+              <form class="add-task-form">
+                <input type="text" placeholder="+ Add a task" required />
+                <button type="submit">Add</button>
+              </form>
             </div>
           </div>
         </div>
@@ -252,25 +222,16 @@
       <div id="kan8-view" class="view-container">
         <div class="kan8-container">
           <div class="kan8-toolbar">
-            <h2 class="kan8-title">
-              <i class="fas fa-project-diagram"></i> Code Architecture - Kan8
-            </h2>
-
+            <h2 class="kan8-title"><i class="fas fa-project-diagram"></i> Code Architecture - Kan8</h2>
             <div class="kan8-controls">
-              <button id="kan8-add-card" class="kan8-btn-primary">
-                <i class="fas fa-plus"></i> Add Card
-              </button>
+              <button id="kan8-add-card" class="kan8-btn-primary"><i class="fas fa-plus"></i> Add Card</button>
             </div>
           </div>
           <div class="kan8-canvas" id="kan8Canvas">
             <div class="kan8-canvas-inner">
               <div class="kan8-grid"></div>
-              <svg class="kan8-connections" id="kan8Connections">
-                <!-- No defs, no markers - clean SVG -->
-              </svg>
-              <div class="kan8-cards" id="kan8Cards">
-                <!-- Cards will be added dynamically -->
-              </div>
+              <svg class="kan8-connections" id="kan8Connections"></svg>
+              <div class="kan8-cards" id="kan8Cards"></div>
             </div>
           </div>
         </div>
@@ -284,9 +245,7 @@
     <div class="chat-window" id="chatWindow">
       <div class="chat-header">
         <h3 class="chat-title">K123 AI Systems</h3>
-        <div class="chat-close" id="chatClose" title="Close Chat">
-          <i class="fas fa-times"></i>
-        </div>
+        <div class="chat-close" id="chatClose" title="Close Chat"><i class="fas fa-times"></i></div>
       </div>
       <div class="chat-messages" id="chatMessages"></div>
       <div class="chat-input-container">

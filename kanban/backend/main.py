@@ -3,7 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # Import the chat router from the file we just fixed
-from .chat.chat_api import router as chat_router
+# from .chat.chat_api import router as chat_router
+from kanban.backend.chat.chat_api import router as chat_router
 
 # --- SETUP ---
 app = FastAPI(title="Kanbanotion AI Assistant Backend")
