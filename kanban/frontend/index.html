@@ -78,6 +78,11 @@
               <a href="#" data-view="code"><i class="fas fa-code"></i><span>Code</span></a>
             </li>
             <li class="nav-item">
+              <a href="#" data-view="webpagecourse">
+                <i class="fas fa-shield-alt"></i><span>WebpageCourse</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="#"><i class="fas fa-shield-alt"></i><span>Security</span></a>
             </li>
             <li class="nav-item">
@@ -130,6 +135,7 @@
   <!-- MAIN CONTENT -->
   <div class="main-content-wrapper">
     <div class="page-container">
+
       <!-- KANBAN VIEW -->
       <div id="kanban-view" class="view-container active">
         <div class="left-column">
@@ -237,8 +243,45 @@
         </div>
       </div>
 
+    </div> <!-- End of page-container -->
+  </div> <!-- End of main-content-wrapper-->
+
+
+  <!-- WEBPAGE COURSE VIEW -->
+  <div id="webpagecourse-view" class="view-container">
+
+    <!-- LEFT COLUMN: MENU -->
+    <div class="left-column">
+      <ul class="menu-list">
+        <li><button class="menu-btn" data-target="lesson-cover">Cover</button></li>
+        <li><button class="menu-btn" data-target="lesson-roadmap">Roadmap</button></li>
+        <li><button class="menu-btn" data-target="lesson-variables">Variables 📦</button></li>
+        <li><button class="menu-btn" data-target="lesson-loops">Loops 🔁</button></li>
+        <li><button class="menu-btn" data-target="lesson-functions">Functions 🧩</button></li>
+        <li><button class="menu-btn" data-target="lesson-conditionals">Conditionals ❓</button></li>
+        <li><button class="menu-btn" data-target="lesson-operators">Operators ⚡</button></li>
+        <li><button class="menu-btn" data-target="lesson-events">Events ⚡</button></li>
+      </ul>
+    </div> <!-- End of left-column -->
+
+    <!-- RIGHT COLUMN: LESSON CONTENT -->
+    <div class="right-column">
+      <div class="webpage-panel">
+        <div class="panel-header">
+          <h2>Webpage Course</h2>
+          <div class="panel-buttons">
+            <button id="resetChat">Reset Chat</button>
+            <button id="toggleChat">AI</button>
+          </div>
+        </div>
+
+        <!-- SINGLE lesson container -->
+        <div class="lesson-container" id="course-content">
+          <!-- Lessons will appear here dynamically -->
+        </div>
+      </div>
     </div>
-  </div>
+  </div> <!-- End of webpagecourse-view -->
 
   <!-- FLOATING CHAT -->
   <div class="chat-widget">
@@ -261,6 +304,9 @@
   <script src="scripts/chat.js"></script>
   <script src="scripts/sidebar.js"></script>
   <script src="scripts/kan8.js"></script>
+  <script src="scripts/webpage.js"></script>
+
+
 </body>
 
 </html>

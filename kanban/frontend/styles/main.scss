@@ -694,11 +694,74 @@ body.sidebar-collapsed .main-content-wrapper {
   min-height: 100vh;
 }
 
+
 /* ===================================
-   TESTING SECTION 
+   WEBPAGE COURSE VIEW
 =================================== */
 
 
+
+/* ===================================
+   DARK MODE OVERRIDES FOR WEBPAGE COURSE
+=================================== */
+body.dark-mode #webpagecourse-view .left-column {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #webpagecourse-view .menu-btn {
+  background-color: #2a2a2a !important;
+  color: #f0f0f0 !important;
+  border: 1px solid #444 !important;
+}
+
+body.dark-mode #webpagecourse-view .menu-btn:hover {
+  background-color: #3a3a3a !important;
+}
+
+body.dark-mode #webpagecourse-view .webpage-panel {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #webpagecourse-view .lesson-container h2,
+body.dark-mode #webpagecourse-view .lesson-container p {
+  color: #f0f0f0 !important;
+}
+
+/* ===================================
+   TESTING BORDERS - REMOVE AFTER FIXING
+=================================== */
+#webpagecourse-view {
+  border: 5px solid red !important;
+}
+
+#webpagecourse-view .left-column {
+  border: 5px solid lime !important;
+}
+
+#webpagecourse-view .right-column {
+  border: 5px solid cyan !important;
+}
+
+#webpagecourse-view .webpage-panel {
+  border: 5px solid orange !important;
+}
+
+#webpagecourse-view .lesson-container {
+  border: 5px solid yellow !important;
+  background: rgba(128, 0, 128, 0.3) !important;
+}
+
+#webpagecourse-view .lesson-container h2,
+#webpagecourse-view .lesson-container p {
+  border: 2px solid white !important;
+}
+
+
+/* ===================================
+   TESTING SECTION 
+=================================== */
 
 
 /* ===================================
@@ -1661,4 +1724,169 @@ body.sidebar-collapsed .main-content-wrapper {
     width: 120px;
     height: 75px;
   }
+}
+
+///////////////////////////////
+
+/* ===================================
+   WEBPAGE COURSE VIEW BASE STYLES
+=================================== */
+#webpagecourse-view {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+#webpagecourse-view.active {
+  display: flex;
+}
+
+/* LEFT COLUMN: Menu */
+#webpagecourse-view .left-column {
+  flex: 0 0 22%;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#webpagecourse-view .menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#webpagecourse-view .menu-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* RIGHT COLUMN: Webpage panel */
+#webpagecourse-view .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#webpagecourse-view .webpage-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #333;
+}
+
+#webpagecourse-view .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#webpagecourse-view .panel-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#webpagecourse-view .panel-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#webpagecourse-view .panel-buttons button {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Lesson container */
+#webpagecourse-view .lesson-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#webpagecourse-view .lesson-container h2 {
+  margin-top: 0;
+}
+
+#webpagecourse-view .lesson-container p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ===================================
+   DARK MODE OVERRIDES FOR WEBPAGE COURSE
+=================================== */
+body.dark-mode #webpagecourse-view .left-column {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #webpagecourse-view .menu-btn {
+  background-color: #2a2a2a !important;
+  color: #f0f0f0 !important;
+  border: 1px solid #444 !important;
+}
+
+body.dark-mode #webpagecourse-view .menu-btn:hover {
+  background-color: #3a3a3a !important;
+}
+
+body.dark-mode #webpagecourse-view .webpage-panel {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode #webpagecourse-view .lesson-container h2,
+body.dark-mode #webpagecourse-view .lesson-container p {
+  color: #f0f0f0 !important;
+}
+
+/* ===================================
+   TESTING BORDERS - REMOVE AFTER FIXING
+=================================== */
+#webpagecourse-view {
+  border: 5px solid red !important;
+}
+
+#webpagecourse-view .left-column {
+  border: 5px solid lime !important;
+}
+
+#webpagecourse-view .right-column {
+  border: 5px solid cyan !important;
+}
+
+#webpagecourse-view .webpage-panel {
+  border: 5px solid orange !important;
+}
+
+#webpagecourse-view .lesson-container {
+  border: 5px solid yellow !important;
+  background: rgba(128, 0, 128, 0.3) !important;
+}
+
+#webpagecourse-view .lesson-container h2,
+#webpagecourse-view .lesson-container p {
+  border: 2px solid white !important;
 }
